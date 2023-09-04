@@ -1,20 +1,20 @@
 <!DOCTYPE html>
+ <!best size will be 80%-75%>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <title>CSCI 571 Assignment1- Fall 2023</title>
     
     <style>
         .bon {
             color: #3333cc;
+            font-size:30px;
+            font-weight: bold;
+            font-family:Georgia, 'Times New Roman', Times, serif;
             padding-left: 380px;
             margin-top: 25px;
-            font-weight: bold;
             margin-bottom: 20px;
             justify-content: center;
-            font-family:Georgia, 'Times New Roman', Times, serif;
-            font-size:30px;
         }
 
         .listhead {
@@ -30,77 +30,63 @@
         }
 
         .photo1text {
+            color: #3333cc;
             font-size: 37px;
             font-weight: bold;
-            color: #3333cc;
+            font-family: Georgia, 'Times New Roman', Times, serif;
             position: absolute;
             top: 13px;
             left: 35px;
             line-height: 1.5;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: bold;
         }
 
         .container {
             display: flex;
             justify-content: center;
-            align-items: center;
-            min-height: 100vh;
         }
 
-        
-        #menustyle ul {
+
+        menu,
+        ul {
             list-style: none;
             padding: 0;
             margin-top: 5px;
             margin-bottom: 23px;
-            display: flex;
-            
+            display: flex; 
         }
-
-        #menustyle ul li {
+        li {
             padding: 5px;
         }
 
+
         .p2 {
-            text-align: center;
             color: #3333cc;
+            font-size: 25px;
+            font-weight: bold;
             font-family: Georgia, 'Times New Roman', Times, serif;
             margin-top: 40px;
             margin-bottom: 30px;
-            font-size: 25px;
-            font-weight: bold;
-            
-        }
-
-
-        .floattop {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            z-index: 1;
+            text-align: center;
         }
 
         .button {
             position: absolute;
-            top: 40%;
-            left: 35px;
             background-color: white;
+            color: black;
             font-size: 13px;
             font-family:Arial, Helvetica, sans-serif;
             font-weight:bold;
-            color: black;
             border: none;
             width: 80px;
             height: 40px;
+            top: 40%;
+            left: 35px;
             cursor: pointer;
         }
 
         .imgleft {
             width: 385px;
             height: 320px;
-            max-width: 100%;
-            max-height: 100%;
             display: block;
             margin-right: 30;
         }
@@ -108,8 +94,6 @@
         .imgright {
             width: 385px;
             height: 320px;
-            max-width: 100%;
-            max-height: 100%;
             display: block;
             margin: auto;
         }
@@ -117,14 +101,12 @@
         .downword {
             color: #3333cc;
             font-size: 17px;
+            font-weight: bold;
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-align: center;
-            font-weight: bold;
             margin-top: 40px;
             margin-bottom: 60px;
         }
-
-       
 
         .culterycontainer {
             position: relative;
@@ -136,16 +118,8 @@
             background-size: contain;
             background-position:top;
         }
-        .culterycontainer::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 65%;
-            z-index: -1;
-           
-        }
+        
+
     </style>
 </head>
 <body>
@@ -155,22 +129,20 @@
         <table>
             <tr>
                 <td colspan="2">
-                    <div id="menustyle">
-                        <ul>
-                            <li class="listhead">Home</li>
-                            <li class="listlast">Decor</li>
-                            <li class="listlast">Your Kitchen</li>
-                            <li class="listlast">Your Bathroom</li>
-                            <li class="listlast">Your Bedroom</li>
-                            <li class="listlast">About</li>
-                            <li class="listlast">Contact</li>
-                        </ul>
-                    </div>
+                    <ul>
+                        <li class="listhead">Home</li>
+                        <li class="listlast">Decor</li>
+                        <li class="listlast">Your Kitchen</li>
+                        <li class="listlast">Your Bathroom</li>
+                        <li class="listlast">Your Bedroom</li>
+                        <li class="listlast">About</li>
+                        <li class="listlast">Contact</li>
+                    </ul>
                 </td>
             </tr>
             <tr>
                 <td colspan="2">
-                    <div class="culterycontainer floattop">
+                    <div class="culterycontainer">
                         <p class="photo1text">Fall Cutlery<br />Collection</p>
                         <button class="button">Shop Now</button>
                     </div>
