@@ -1,201 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-
-    <title>CSCI 571 Assignment1- Fall 2023</title>
-    
-    <style>
-        .bon {
-            color: #3333cc;
-            padding-left: 380px;
-            margin-top: 25px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            justify-content: center;
-            font-family:Georgia, 'Times New Roman', Times, serif;
-            font-size:30px;
-        }
-
-        .listhead {
-            color: #3333cc;
-            font-size: 14px;
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        }
-        
-        .listlast {
-            color: black;
-            font-size: 14px;
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        .photo1text {
-            font-size: 37px;
-            font-weight: bold;
-            color: #3333cc;
-            position: absolute;
-            top: 13px;
-            left: 35px;
-            line-height: 1.5;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-weight: bold;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        
-        #menustyle ul {
-            list-style: none;
-            padding: 0;
-            margin-top: 5px;
-            margin-bottom: 23px;
-            display: flex;
-            
-        }
-
-        #menustyle ul li {
-            padding: 5px;
-        }
-
-        .p2 {
-            text-align: center;
-            color: #3333cc;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin-top: 40px;
-            margin-bottom: 30px;
-            font-size: 25px;
-            font-weight: bold;
-            
-        }
-
-
-        .floattop {
-            position: -webkit-sticky;
-            position: sticky;
-            top: 0;
-            z-index: 1;
-        }
-
-        .button {
-            position: absolute;
-            top: 40%;
-            left: 35px;
-            background-color: white;
-            font-size: 13px;
-            font-family:Arial, Helvetica, sans-serif;
-            font-weight:bold;
-            color: black;
-            border: none;
-            width: 80px;
-            height: 40px;
-            cursor: pointer;
-        }
-
-        .imgleft {
-            width: 385px;
-            height: 320px;
-            max-width: 100%;
-            max-height: 100%;
-            display: block;
-            margin-right: 30;
-        }
-
-        .imgright {
-            width: 385px;
-            height: 320px;
-            max-width: 100%;
-            max-height: 100%;
-            display: block;
-            margin: auto;
-        }
-
-        .downword {
-            color: #3333cc;
-            font-size: 17px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            text-align: center;
-            font-weight: bold;
-            margin-top: 40px;
-            margin-bottom: 60px;
-        }
-
-       
-
-        .culterycontainer {
-            position: relative;
-            width: 800px;
-            height: 450px;
-            background-image: url('http://csci571.com/hw/hw3/images/Cutlery.png');
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-size: contain;
-            background-position:top;
-        }
-        .culterycontainer::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 65%;
-            z-index: -1;
-           
-        }
-    </style>
+<!-- saved from url=(0049)https://csci571.com/hw/hw2/ScrambleThisTable.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+table, th, td {
+  border: 5px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+</style>
 </head>
 <body>
-    <p class="bon">BöN</p>
-    <hr size="1 px" width="100%" color="grey">
-    <div class="container">
-        <table>
-            <tr>
-                <td colspan="2">
-                    <div id="menustyle">
-                        <ul>
-                            <li class="listhead">Home</li>
-                            <li class="listlast">Decor</li>
-                            <li class="listlast">Your Kitchen</li>
-                            <li class="listlast">Your Bathroom</li>
-                            <li class="listlast">Your Bedroom</li>
-                            <li class="listlast">About</li>
-                            <li class="listlast">Contact</li>
-                        </ul>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <div class="culterycontainer floattop">
-                        <p class="photo1text">Fall Cutlery<br />Collection</p>
-                        <button class="button">Shop Now</button>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="2"><p class="p2">Defining Styling Since 1965.</p></td>
-            </tr>
-            <tr>
-                <td colspan="1"><img class="imgleft" src="http://csci571.com/hw/hw3/images/Decor.png" alt="Decor"></td>
-                <td colspan="1"><img class="imgright" src="http://csci571.com/hw/hw3/images/Bedroom.png" alt="your bedroom"></td>
-            </tr>
-            <tr>
-                <td colspan="1"><p class="downword">Decor</p></td>
-                <td colspan="1"><p class="downword">Your Bedroom</p></td>
-            </tr>
-            <tr>
-                <td colspan="1"><img class="imgleft" src="http://csci571.com/hw/hw3/images/Kitchen.png" alt="Kitchen"></td>
-                <td colspan="1"><img class="imgright" src="http://csci571.com/hw/hw3/images/Bathroom.png" alt="Bathroom"></td>
-            </tr>
-            <tr>
-                <td colspan="1"><p class="downword">Your Kitchen</p></td>
-                <td colspan="1"><p class="downword">Your Bathroom</p></td>
-            </tr>
-        </table>
-    </div>
-</body>
-</html>
+
+<table style="width:60%" align="center">
+  <tbody><tr>
+    <td><a href="https://csci571.com/hw/hw2/ScrambleThisName.html">Link to Assignment #1</a></td>
+      <td></td>
+  </tr>
+    <tr>
+    <td><a href="https://csci571.com/hw/hw2/ScrambleThisName.html">Link to Assignment #2</a></td>
+    <td><a href="https://csci571.com/hw/hw2/ScrambleThisName.html">Link to Assignment #2 Cloud</a></td>    
+  </tr>
+  <tr>
+    <td><a href="https://csci571.com/hw/hw2/ScrambleThisName.html">Link to Assignment #3</a></td>
+    <td><a href="https://csci571.com/hw/hw2/ScrambleThisName.html">Link to Assignment #3 Cloud</a></td> 
+  </tr>
+  <tr>
+     <td></td>
+    <td><a href="https://csci571.com/hw/hw2/ScrambleThisName.html">Link to Assignment #4 Cloud</a></td> 
+  </tr>
+  </tbody></table>
+
+
+</body></html>
