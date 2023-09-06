@@ -1,10 +1,10 @@
 
-    .bon {
+.bon {
     color: #3333cc;
     font-size:20px;
     font-weight: bold;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    margin-left: 100px;
+    margin-left: 50px;
     margin-top: 15px;
     margin-bottom: 10px;
     justify-content: center;
@@ -36,8 +36,8 @@
 .container {
     display: flex;
     justify-content: center;
-    margin-left: 30px;
-    margin-right:30px;
+    margin-left: 20px;
+    margin-right:20px;
 }
 
 
@@ -80,15 +80,15 @@ li {
 }
 
 .imgleft {
-    width: 385px;
-    height: 320px;
+    width: 425px;
+    height: 380px;
     display: block;
-    margin-right: 30;
+    margin-right: 50;
 }
 
 .imgright {
-    width: 385px;
-    height: 320px;
+    width: 425px;
+    height: 380px;
     display: block;
     margin: auto;
 }
@@ -105,11 +105,11 @@ li {
 
 .culterycontainer {
     position: relative;
-    width: 800px;
+    width: 900px;
     height: 400px;
     background-image: url('http://csci571.com/hw/hw3/images/Cutlery.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 800px 600px;
+    background-size: 900px 600px;
     background-position:top;
 }
