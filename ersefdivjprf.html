@@ -20,7 +20,8 @@ th, td {
   </tr>
     <tr>
     <td><a href="https://peiyilin-ebay-hw2.wl.r.appspot.com/">Link to Assignment #2</a></td>
-    <td><a href="https://csci571.com/hw/hw2/ScrambleThisName.htm">Link to Assignment #2 Cloud</a></td>    
+    <td><a id="jsondata-link" href="#">Link to Assignment #2 Cloud</a></td>
+    
   </tr>
   <tr>
     <td><a href="https://csci571.com/hw/hw2/ScrambleThisName.html">Link to Assignment #3</a></td>
@@ -31,6 +32,20 @@ th, td {
     <td><a href="https://csci571.com/hw/hw2/ScrambleThisName.html">Link to Assignment #4 Cloud</a></td> 
   </tr>
   </tbody></table>
-
+  <script>
+   
+    document.addEventListener('DOMContentLoaded', function() {
+        
+        const link = document.getElementById('jsondata-link');
+    
+        link.addEventListener('click', function(event) {
+        event.preventDefault();
+        const jsondata = localStorage.getItem('jsondata');
+        const blob = new Blob([jsondata], { type: 'application/json' });
+        const url = URL.createObjectURL(blob);
+        window.open(url, '_blank');
+        });
+    });
+    </script>
 
 </body></html>
